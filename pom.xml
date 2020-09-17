@@ -6,4 +6,8 @@
     <artifactId>dspractice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+    <modules>
+        <module>tree</module>
+    </modules>
 </project>
