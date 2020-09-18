@@ -3,7 +3,7 @@
 
 | 编号 | 专题        | 耗时            | 王奇完成度 | 泗泉完成度 |
 | ---- | ----------- | --------------- | ---------- | ---------- |
-| 1    | [树](#Tree) | 2020-09-17-至今 | 0.00%      | 0.00%      |
+| 1    | [树](#Tree) | 2020-09-17-至今 | 0/6        | 0/6        |
 
 ## Tree
 
@@ -13,4 +13,6 @@
 | 2    | [中序遍历](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [leetcode](https://leetcode.com/) | 树的遍历，递归 | 未完成 | 未完成 |
 | 3    | [后序遍历](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [leetcode](https://leetcode.com/) | 树的遍历，递归 | 未完成 | 未完成 |
 | 4    | [层序遍历](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [leetcode](https://leetcode.com/) | 树的遍历       | 未完成 | 未完成 |
+| 5    | [从前序和中序遍历中构造二叉树](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [leetcode](https://leetcode.com/) | 树的遍历       | 未完成 | 未完成 |
+| 6    | [从后序和中序遍历中构造二叉树](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [leetcode](https://leetcode.com/) | 树的遍历       | 未完成 | 未完成 |
 
