@@ -12,8 +12,8 @@ public class $145Example extends $145BinaryTreePostorderTraversalExample {
 
     @Override
     public List<Integer> postorderTraversal(TreeNode root) {
-        return recursiveTraversal(root);
-//        return nonRecursiveTraversal(root);
+//        return recursiveTraversal(root);
+        return nonRecursiveTraversal(root);
     }
 
     /**
@@ -48,15 +48,21 @@ public class $145Example extends $145BinaryTreePostorderTraversalExample {
         }
 
         Stack<TreeNode> stack = new Stack<>();
-        stack.push(root);
-        while (!stack.isEmpty()) {
-            TreeNode node = stack.pop();
-            result.add(node.val);
-            if (node.right != null) {
-                stack.push(node.right);
+        TreeNode node = root;
+        TreeNode prev = null;
+        while (!stack.isEmpty() || node != null) {
+            while (node != null) {
+                stack.push(node);
+                node = node.left;
             }
-            if (node.left != null) {
-                stack.push(node.left);
+            node = stack.pop();
+            if (node.right != null && prev != node.right) {
+                stack.push(node);
+                node = node.right;
+            } else {
+                result.add(node.val);
+                prev = node;
+                node = null;
             }
         }
         return result;
