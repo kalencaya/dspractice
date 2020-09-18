@@ -12,8 +12,8 @@ public class $94Example extends $94BinaryTreeInorderTraversalExample {
 
     @Override
     public List<Integer> inorderTraversal(TreeNode root) {
-//        return recursiveTraversal(root);
-        return nonRecursiveTraversal(root);
+        return recursiveTraversal(root);
+//        return nonRecursiveTraversal(root);
     }
 
     /**
@@ -48,18 +48,13 @@ public class $94Example extends $94BinaryTreeInorderTraversalExample {
         }
 
         Stack<TreeNode> stack = new Stack<>();
-        stack.push(root);
-        while (!stack.isEmpty()) {
-            TreeNode node = stack.pop();
+        TreeNode node = root;
+        while (!stack.isEmpty() || node != null) {
             while (node != null) {
-                if (node.right != null) {
-                    stack.push(node.right);
-                }
-                if (node.left != null) {
-                    stack.push(node.left);
-                }
+                stack.push(node);
                 node = node.left;
             }
+            node = stack.pop();
             result.add(node.val);
             node = node.right;
         }
