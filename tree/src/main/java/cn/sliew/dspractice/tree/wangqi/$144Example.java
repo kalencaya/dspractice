@@ -6,6 +6,7 @@ import cn.sliew.dspractice.tree.problem.TreeNode;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * 144. Binary Tree Preorder Traversal medium
@@ -14,8 +15,8 @@ import java.util.List;
 public class $144Example extends $144BinaryTreePreorderTraversalExample {
 
     public List<Integer> preorderTraversal(TreeNode root) {
-        return recursiveTraversal(root);
-//        return nonRecursiveTraversal(root);
+//        return recursiveTraversal(root);
+        return nonRecursiveTraversal(root);
     }
 
     /**
@@ -41,12 +42,28 @@ public class $144Example extends $144BinaryTreePreorderTraversalExample {
         }
     }
 
-
     /**
      * 非递归写法
      */
     private List<Integer> nonRecursiveTraversal(TreeNode root) {
-        return null;
+        List<Integer> result = new LinkedList<>();
+        if (root == null) {
+            return result;
+        }
+
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            TreeNode node = stack.pop();
+            result.add(node.val);
+            if (node.right != null) {
+                stack.push(node.right);
+            }
+            if (node.left != null) {
+                stack.push(node.left);
+            }
+        }
+        return result;
     }
 
     public static void main(String[] args) {
