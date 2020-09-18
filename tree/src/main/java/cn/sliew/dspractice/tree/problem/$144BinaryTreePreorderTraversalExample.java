@@ -1,7 +1,5 @@
 package cn.sliew.dspractice.tree.problem;
 
-import cn.sliew.dspractice.tree.TreeNode;
-
 import java.util.List;
 
 /**

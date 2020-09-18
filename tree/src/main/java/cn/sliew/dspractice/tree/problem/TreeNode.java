@@ -1,4 +1,4 @@
-package cn.sliew.dspractice.tree;
+package cn.sliew.dspractice.tree.problem;
 
 import java.util.Deque;
 import java.util.LinkedList;
