@@ -20,7 +20,6 @@ public class N144Solution {
             return result;
         }
         stack.add(root);
-        // 递归遍历处理
         while (!stack.isEmpty()) {
             TreeNode current = stack.pop();
             result.add(current.val);
@@ -32,6 +31,21 @@ public class N144Solution {
             }
         }
         return result;
+    }
+
+    public List<Integer> preorderTraversalM2() {
+        List<Integer> result = new ArrayList<>();
+        return result;
+    }
+
+    public void recursiveGet(TreeNode root, List<Integer> result) {
+        if (root == null) {
+            return;
+        }
+        // root->left->right
+        result.add(root.val);
+        recursiveGet(root.left,result);
+        recursiveGet(root.right,result);
     }
 
 }
