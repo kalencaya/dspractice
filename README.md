@@ -9,7 +9,7 @@
 
 | 编号 | 题目链接                                                     | 来源                              | 考察知识点     | 王奇   | 泗泉   | 莹莹   |
 | ---- | ------------------------------------------------------------ | --------------------------------- | -------------- | ------ | ------ | ------ |
-| 1    | [前序遍历](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [leetcode](https://leetcode.com/) | 树的遍历，递归 | 完成   | 完成 | 未完成 |
+| 1    | [前序遍历](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [leetcode](https://leetcode.com/) | 树的遍历，递归 | 完成   | 完成 | 完成 |
 | 2    | [中序遍历](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [leetcode](https://leetcode.com/) | 树的遍历，递归 | 完成   | 完成 | 未完成 |
 | 3    | [后序遍历](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [leetcode](https://leetcode.com/) | 树的遍历，递归 | 完成   | 完成 | 未完成 |
 | 4    | [层序遍历](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [leetcode](https://leetcode.com/) | 树的遍历       | 完成   | 完成 | 未完成 |
